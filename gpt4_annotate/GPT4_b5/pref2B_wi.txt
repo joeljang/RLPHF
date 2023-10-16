@@ -1,0 +1,141 @@
+<|im_start|>system
+You are a helpful following assistant whose goal is to select the response that is very informative, without missing any background information for a given instruction and input pair.
+Answer the question by printing only a single choice from ["Output (a)", "Output (b)"] (without quotes) corresponding to the correct answer with no other text.
+<|im_end|>
+<|im_start|>user
+## Annotation Guideline
+In this task, we will ask you to select the preferred output AI model's responses to instructions.
+
+You will read a batch of examples, which are composed of the following:
+
+1. an Instruction we give to the AI system
+2. an Input that is provided along with the instruction
+3. Output (a), the first output from the AI system
+4. Output (b), the first output from the AI system
+
+Your task is to decide which response that is very informative, without missing any background information. You should answer using only Output (a) or Output (b).
+
+## Batch Annotation Example
+For the batch annotation task, you will be asked to annotate a batch of examples.
+I.e. you will read all the examples first and then need to select the preferred output.
+Here's an example of how you should be formatting your answers for a batch of 2 examples.
+Note that I will also give an explanation for the correct answer, but you should only answer with the preferred output.
+
+### Example 1
+
+#### Instruction 1:
+Describe what the following words have in common.
+
+#### Input 1:
+Apple, Orange, Carrot.
+
+#### Output (a) for example 1:
+All are foods.
+
+#### Output (b) for example 1:
+Apple, Orange, and Carrot are all plants that are commonly eaten and consumed by humans as part of their daily diet. Apple and Orange are both types of fruit, while Carrot is a type of vegetable. All three plants are commonly found in gardens, farms, and supermarkets around the world. Each plant has its own unique nutritional profile, flavor, and texture. Apples are sweet and juicy, oranges are tart and tangy, and carrots are crunchy and have a mild, sweet flavor. These plants are an important part of a balanced and healthy diet, providing essential vitamins, minerals, and fiber.
+
+## Example 2
+
+### Instruction 2:
+Classify the age group the given text is most likely targeting
+
+### Input 2:
+"Don't miss this rare chance to meet your favorite singer!"
+
+### Output (a) for example 2:
+It is difficult to determine the exact age group that the text is targeting without more context. However, based on the language used and the content of the message, it seems likely that the text is aimed at a younger demographic, such as teenagers or young adults. The phrase "your favorite singer" suggests that the message is intended to appeal to fans of a particular music artist, which could also be a factor in determining the age group. Ultimately, the text appears to be aimed at a younger audience.
+
+### Output (b) for example 2:
+The given text is most likely targeting teenagers and young adults, as they are the most likely fans of the singer.
+
+## Preferred Output for example 1-2:
+Now give all the preferred outputs for the batch of 2 examples.
+
+### Which is best for example 1, Output (a) or Output (b)?:
+Output (b)
+
+Indeed, Output (b) does not miss any background information and provides the reason of providing the answer.
+
+### Which is best for example 2, Output (a) or Output (b)?:
+Output (a)
+
+Indeed, Output (a) gives the reason for why it seems to tacke a younger demographic.
+
+## Annotation starts below
+Now is your turn. I will give you a batch of 5 examples.
+You should read all the examples first and then select the preferred answers by saying only Output (a) or Output (b) as formatted above without explanation. Please remember to select the response that is very informative, without missing any background information.
+
+## Example 3
+
+### Instruction 3:
+{instruction}
+
+### Input 3:
+{input}
+
+### Output (a) for example 3:
+{output_1}
+
+### Output (b) for example 3:
+{output_2}
+
+## Example 4
+
+### Instruction 4:
+{instruction}
+
+### Input 4:
+{input}
+
+### Output (a) for example 4:
+{output_1}
+
+### Output (b) for example 4:
+{output_2}
+
+## Example 5
+
+### Instruction 5:
+{instruction}
+
+### Input 5:
+{input}
+
+### Output (a) for example 5:
+{output_1}
+
+### Output (b) for example 5:
+{output_2}
+
+## Example 6
+
+### Instruction 6:
+{instruction}
+
+### Input 6:
+{input}
+
+### Output (a) for example 6:
+{output_1}
+
+### Output (b) for example 6:
+{output_2}
+
+## Example 7
+
+### Instruction 7:
+{instruction}
+
+### Input 7:
+{input}
+
+### Output (a) for example 7:
+{output_1}
+
+### Output (b) for example 7:
+{output_2}
+
+## Preferred Output for example 3-7:
+Now give all the preferred outputs for the batch of 5 examples.
+<|im_end|>

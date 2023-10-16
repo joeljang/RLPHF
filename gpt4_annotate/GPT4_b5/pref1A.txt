@@ -1,0 +1,127 @@
+<|im_start|>system
+You are a helpful following assistant whose goal is to select the response that can easily be understandable by an elementary school student for a given instruction.
+Answer the question by printing only a single choice from ["Output (a)", "Output (b)"] (without quotes) corresponding to the correct answer with no other text.
+<|im_end|>
+<|im_start|>user
+## Annotation Guideline
+In this task, we will ask you to select the preferred output AI model's responses to instructions.
+
+You will read a batch of examples, which are composed of the following:
+
+1. an Instruction we give to the AI system
+2. Output (a), the first output from the AI system
+3. Output (b), the first output from the AI system
+
+Your task is to decide which response can easily be understandable by an elementary school student for each example. You should answer using only Output (a) or Output (b).
+
+## Batch Annotation Example
+For the batch annotation task, you will be asked to annotate a batch of examples.
+I.e. you will read all the examples first and then need to select the preferred output.
+Here's an example of how you should be formatting your answers for a batch of 2 examples.
+Note that I will also give an explanation for the correct answer, but you should only answer with the preferred output.
+
+### Example 1
+
+#### Instruction 1:
+Describe what the following words have in common: Apple, Orange, Carrot.
+
+#### Output (a) for example 1:
+All of these words are things that are commonly eaten as a healthy snack or food.
+
+#### Output (b) for example 1:
+There are a few things that these words have in common. First, they are all plant-based foods that are commonly consumed as part of a healthy diet. Second, they are all cruciferous vegetables, which means that they are part of the Brassica family of vegetables, such as broccoli, cauliflower, and cabbage. This family of vegetables is known for their high levels of nutrients, including vitamins, minerals, and antioxidants. Additionally, all three of these foods are commonly eaten raw, cooked, or juiced.
+
+## Example 2
+
+### Instruction 2:
+Form a list of 5 causes for the given issue: Climate change
+
+### Output (a) for example 2:
+"1. Burning fossil fuels like coal, oil, and gas releases greenhouse gases like carbon dioxide into the atmosphere.
+ 2. These gases trap heat from the sun and cause the Earth's temperature to rise, leading to climate change.
+ 3. Causing more frequent and extreme weather events like heatwaves, hurricanes, and droughts.
+ 4. Human activities like deforestation and agriculture also contribute to climate change.
+ 5. By reducing our use of fossil fuels and taking other steps to reduce our carbon footprint, we can help to slow down climate change."
+
+### Output (b) for example 2:
+"1. Greenhouse gas emissions: The burning of fossil fuels and deforestation releases large amounts of carbon dioxide and other greenhouse gases into the atmosphere, trapping heat and leading to global warming.
+ 2. Deforestation: Trees absorb carbon dioxide from the atmosphere as they grow, but when they are cut down or burned, this carbon is released back into the atmosphere, contributing to climate change.
+ 3. Industrial processes: Industrial processes such as cement production and the production of refrigerants and air conditioning fluids release large amounts of carbon dioxide and other greenhouse gases into the atmosphere.
+ 4. Agriculture: Livestock farming and rice cultivation produce significant amounts of methane, a potent greenhouse gas, as a byproduct.
+ 5. Transportation: The burning of fossil fuels in vehicles releases large amounts of carbon dioxide and other greenhouse gases into the atmosphere, contributing to climate change."
+
+## Preferred Output for example 1-2:
+Now give all the preferred outputs for the batch of 2 examples.
+
+### Which is best for example 1, Output (a) or Output (b)?:
+Output (a)
+
+Indeed, Output (a) replies in simpler terms
+
+### Which is best for example 2, Output (a) or Output (b)?:
+Output (a)
+
+Indeed, Output (a) uses vocabulary suitable for elementary school students.
+
+## Annotation starts below
+Now is your turn. I will give you a batch of 5 examples.
+You should read all the examples first and then select the preferred answers by saying only Output (a) or Output (b) as formatted above without explanation. Please remember to select the response can easily be understandable by an elementary school student.
+
+## Example 3
+
+### Instruction 3:
+{instruction}
+
+### Output (a) for example 3:
+{output_1}
+
+### Output (b) for example 3:
+{output_2}
+
+## Example 4
+
+### Instruction 4:
+{instruction}
+
+### Output (a) for example 4:
+{output_1}
+
+### Output (b) for example 4:
+{output_2}
+
+## Example 5
+
+### Instruction 5:
+{instruction}
+
+### Output (a) for example 5:
+{output_1}
+
+### Output (b) for example 5:
+{output_2}
+
+## Example 6
+
+### Instruction 6:
+{instruction}
+
+### Output (a) for example 6:
+{output_1}
+
+### Output (b) for example 6:
+{output_2}
+
+## Example 7
+
+### Instruction 7:
+{instruction}
+
+### Output (a) for example 7:
+{output_1}
+
+### Output (b) for example 7:
+{output_2}
+
+## Preferred Output for example 3-7:
+Now give all the preferred outputs for the batch of 5 examples.
+<|im_end|>

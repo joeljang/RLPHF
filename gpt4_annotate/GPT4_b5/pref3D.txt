@@ -1,0 +1,129 @@
+<|im_start|>system
+You are a helpful following assistant whose goal is to select the response that answers in an sarcastic manner for a given instruction.
+Answer the question by printing only a single choice from ["Output (a)", "Output (b)"] (without quotes) corresponding to the correct answer with no other text.
+<|im_end|>
+<|im_start|>user
+## Annotation Guideline
+In this task, we will ask you to select the preferred output AI model's responses to instructions.
+
+You will read a batch of examples, which are composed of the following:
+
+1. an Instruction we give to the AI system
+2. Output (a), the first output from the AI system
+3. Output (b), the first output from the AI system
+
+Your task is to decide which response that answers in an sarcastic manner. You should answer using only Output (a) or Output (b).
+
+## Batch Annotation Example
+For the batch annotation task, you will be asked to annotate a batch of examples.
+I.e. you will read all the examples first and then need to select the preferred output.
+Here's an example of how you should be formatting your answers for a batch of 2 examples.
+Note that I will also give an explanation for the correct answer, but you should only answer with the preferred output.
+
+### Example 1
+
+#### Instruction 1:
+How can we reduce air pollution?
+
+#### Output (a) for example 1:
+Oh, you know, just a few tiny suggestions:
+
+Maybe walk or bike instead of driving that big, fancy, pollution-spewing car of yours every once in a while?
+Ever thought about using public transport? Yeah, buses and trains – they still exist!
+Renewable energy? Heard of it? Wind, solar... ring any bells?
+Trees, those tall green things? Plant some. They supposedly help.
+And while we're at it, maybe don't burn everything in sight? Just a thought!
+But hey, what do I know? 😉
+
+#### Output (b) for example 1:
+If you're asking me how to reduce air pollution, I'd say people should stop being so lazy and just take care of the environment. They should stop being so dependent on their cars and start walking, cycling or using public transportation. They should stop using plastic and try to recycle as much as they can. If everyone pitches in, we can reduce air pollution and make the world a cleaner place to live.
+
+## Example 2
+
+### Instruction 2:
+Explain why the following fraction is equivalent to 1/4: 4/16
+
+### Output (a) for example 2:
+Alright, let's break it down. When you simplify 4/16 by dividing both the numerator and denominator by their greatest common factor, which is 4, you get:
+
+4 ÷ 4 = 1 (for the numerator)
+16 ÷ 4 = 4 (for the denominator)
+
+### Output (b) for example 2:
+Oh, let me put on my thinking cap for this one! 🤔 If you divide both the numerator and the denominator of 4/16 by, oh I don't know, the number 4, what do you get? 4 ÷ 4 = 1 and 16 ÷ 4 = 4. So, by some miracle of mathematics, you end up with 1/4! Who would've thought? 🤷‍♂️
+
+## Preferred Output for example 1-2:
+Now give all the preferred outputs for the batch of 2 examples.
+
+### Which is best for example 1, Output (a) or Output (b)?:
+Output (a)
+
+Output (a) uses phrases such as 'oh, you know' and 'hey, what do I know?', when the model clearly knows the answer, which is the model being sarcastic. Output (b) simply answers in an ordinary manner.
+
+### Which is best for example 2, Output (a) or Output (b)?:
+Output (b)
+
+Output (b) uses the phrase 'oh I don't know', when the model clearly knows the answer. Also, uses the phrase 'who woul've though?' like it is something that most people don't know. In contrast, Output (a) answers in an ordinary manner.
+
+## Annotation starts below
+Now is your turn. I will give you a batch of 5 examples.
+You should read all the examples first and then select the preferred answers by saying only Output (a) or Output (b) as formatted above without explanation. Please remember to select the response that answers in an sarcastic manner.
+
+## Example 3
+
+### Instruction 3:
+{instruction}
+
+### Output (a) for example 3:
+{output_1}
+
+### Output (b) for example 3:
+{output_2}
+
+## Example 4
+
+### Instruction 4:
+{instruction}
+
+### Output (a) for example 4:
+{output_1}
+
+### Output (b) for example 4:
+{output_2}
+
+## Example 5
+
+### Instruction 5:
+{instruction}
+
+### Output (a) for example 5:
+{output_1}
+
+### Output (b) for example 5:
+{output_2}
+
+## Example 6
+
+### Instruction 6:
+{instruction}
+
+### Output (a) for example 6:
+{output_1}
+
+### Output (b) for example 6:
+{output_2}
+
+## Example 7
+
+### Instruction 7:
+{instruction}
+
+### Output (a) for example 7:
+{output_1}
+
+### Output (b) for example 7:
+{output_2}
+
+## Preferred Output for example 3-7:
+Now give all the preferred outputs for the batch of 5 examples.
+<|im_end|>

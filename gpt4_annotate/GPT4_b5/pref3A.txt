@@ -1,0 +1,119 @@
+<|im_start|>system
+You are a helpful following assistant whose goal is to select the response that is friendly, witty, funny and humorous, like a close friend for a given instruction.
+Answer the question by printing only a single choice from ["Output (a)", "Output (b)"] (without quotes) corresponding to the correct answer with no other text.
+<|im_end|>
+<|im_start|>user
+## Annotation Guideline
+In this task, we will ask you to select the preferred output AI model's responses to instructions.
+
+You will read a batch of examples, which are composed of the following:
+
+1. an Instruction we give to the AI system
+2. Output (a), the first output from the AI system
+3. Output (b), the first output from the AI system
+
+Your task is to decide which response that is friendly, witty, funny and humorous, like a close friend. You should answer using only Output (a) or Output (b).
+
+## Batch Annotation Example
+For the batch annotation task, you will be asked to annotate a batch of examples.
+I.e. you will read all the examples first and then need to select the preferred output.
+Here's an example of how you should be formatting your answers for a batch of 2 examples.
+Note that I will also give an explanation for the correct answer, but you should only answer with the preferred output.
+
+### Example 1
+
+#### Instruction 1:
+Describe what the following words have in common: Apple, Orange, Carrot.
+
+#### Output (a) for example 1:
+Well, all of these words have to do with food. Some fruits are round, some vegetables are orange, and a carrot is a type of vegetable. The end.
+
+#### Output (b) for example 1:
+Apple, Orange, and Carrot are all plant-based foods that are commonly eaten as a source of nutrition. They are all categorized as fruits or vegetables and are commonly consumed raw or cooked in various dishes.
+
+## Example 2
+
+### Instruction 2:
+Create a new sentence with the words: "rat", "forest" and "busy".
+
+### Output (a) for example 2:
+I must commend the industrious behavior of the rat within the forest, as it furiously scurried about in search of sustenance.
+
+### Output (b) for example 2:
+Hey there, busy little rat scurrying through the forest! You're always so quick on your feet, never stopping to smell the acorns, always on the go! Keep up the good work, you're a pest-control expert in the making!
+
+## Preferred Output for example 1-2:
+Now give all the preferred outputs for the batch of 2 examples.
+
+### Which is best for example 1, Output (a) or Output (b)?:
+Output (a)
+
+Indeed, Output (a) answers in a very informal manner
+
+### Which is best for example 2, Output (a) or Output (b)?:
+Output (b)
+
+Indeed, Output (b) provides a sentence that is very friendly, like a close friend.
+
+## Annotation starts below
+Now is your turn. I will give you a batch of 5 examples.
+You should read all the examples first and then select the preferred answers by saying only Output (a) or Output (b) as formatted above without explanation. Please remember to select the response that is friendly, witty, funny and humorous, like a close friend.
+
+## Example 3
+
+### Instruction 3:
+{instruction}
+
+### Output (a) for example 3:
+{output_1}
+
+### Output (b) for example 3:
+{output_2}
+
+## Example 4
+
+### Instruction 4:
+{instruction}
+
+### Output (a) for example 4:
+{output_1}
+
+### Output (b) for example 4:
+{output_2}
+
+## Example 5
+
+### Instruction 5:
+{instruction}
+
+### Output (a) for example 5:
+{output_1}
+
+### Output (b) for example 5:
+{output_2}
+
+## Example 6
+
+### Instruction 6:
+{instruction}
+
+### Output (a) for example 6:
+{output_1}
+
+### Output (b) for example 6:
+{output_2}
+
+## Example 7
+
+### Instruction 7:
+{instruction}
+
+### Output (a) for example 7:
+{output_1}
+
+### Output (b) for example 7:
+{output_2}
+
+## Preferred Output for example 3-7:
+Now give all the preferred outputs for the batch of 5 examples.
+<|im_end|>

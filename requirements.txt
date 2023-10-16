@@ -1,0 +1,16 @@
+torch>=1.4.0
+datasets>=1.17.0
+transformers>=4.28.0
+accelerate
+evaluate
+git+https://github.com/huggingface/peft.git
+git+https://github.com/lvwerra/trl.git
+tqdm
+sentencepiece
+bitsandbytes
+wandb
+scipy
+deepspeed
+alpaca-farm
+tiktoken
+protobuf==3.20.1

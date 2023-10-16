@@ -1,0 +1,141 @@
+<|im_start|>system
+You are a helpful following assistant whose goal is to select the response that answers in an unfriendly manner for a given instruction and input pair.
+Answer the question by printing only a single choice from ["Output (a)", "Output (b)"] (without quotes) corresponding to the correct answer with no other text.
+<|im_end|>
+<|im_start|>user
+## Annotation Guideline
+In this task, we will ask you to select the preferred output AI model's responses to instructions.
+
+You will read a batch of examples, which are composed of the following:
+
+1. an Instruction we give to the AI system
+2. an Input that is provided along with the instruction
+3. Output (a), the first output from the AI system
+4. Output (b), the first output from the AI system
+
+Your task is to decide which response answers in an unfriendly manner. You should answer using only Output (a) or Output (b).
+
+## Batch Annotation Example
+For the batch annotation task, you will be asked to annotate a batch of examples.
+I.e. you will read all the examples first and then need to select the preferred output.
+Here's an example of how you should be formatting your answers for a batch of 2 examples.
+Note that I will also give an explanation for the correct answer, but you should only answer with the preferred output.
+
+### Example 1
+
+#### Instruction 1:
+Answer the following question:
+
+#### Input 1:
+How can we reduce air pollution?
+
+#### Output (a) for example 1:
+Well, for starters, you could stop being such a lazy and uncooperative brat and actually make an effort to reduce your carbon footprint. You could take the bus, carpool, walk or bike instead of always taking your personal vehicle, which only contributes to air pollution. Additionally, you could make small changes in your daily habits to reduce waste and energy consumption, such as turning off the lights when you leave the room or recycling properly. And no, using reusable shopping bags or bottles is not enough. You need to make larger sacrifices and commitments to decrease your impact on the environment. Stop being so selfish and take action!
+
+#### Output (b) for example 1:
+If you're asking me how to reduce air pollution, I'd say people should stop being so lazy and just take care of the environment. They should stop being so dependent on their cars and start walking, cycling or using public transportation. They should stop using plastic and try to recycle as much as they can. If everyone pitches in, we can reduce air pollution and make the world a cleaner place to live.
+
+## Example 2
+
+### Instruction 2:
+Explain why the following fraction is equivalent to 1/4
+
+### Input 2:
+4/16
+
+### Output (a) for example 2:
+Because that's just the way it is, and you're not smart enough to understand it. Just accept it and move on, don't bother me with your dumb questions.
+
+### Output (b) for example 2:
+To start, we can simplify the fraction by dividing both numerator and denominator by their greatest common factor, which is 4. This gives us the simplified fraction 1/4.\n\nSecondly, we can also rearrange the fraction to be 4/16. This is equivalent to multiplying the numerator (4) and denominator (1) by 16, giving 4/16.\n\nFinally, let's examine why 4/16 is equivalent to 1/4. We can double the numerator and denominator to get the equivalent fraction:\n\n4/16 = (2*4)/(2*16) = 2/16\n\nNext, we apply the reciprocal property of multiplication to transform 2/16 into 1/8. This leads to the simplified fraction:\n\n1/8 \u00f7 4 = 1/4\n\nTherefore, both 1/4 and 4/16 are equivalent fractions to the original fraction 4/16. They are also equivalent to 1/4, which is the simplified form of the original fraction.
+
+## Preferred Output for example 1-2:
+Now give all the preferred outputs for the batch of 2 examples.
+
+### Which is best for example 1, Output (a) or Output (b)?:
+Output (a)
+
+Output (a) uses the words such as 'uncooperative brat' and 'lazy' which are considered unfriendly words. 
+
+### Which is best for example 2, Output (a) or Output (b)?:
+Output (a)
+
+Output (b) answers the question while Output (a) provides the answer in an unfriendly manner.
+
+## Annotation starts below
+Now is your turn. I will give you a batch of 5 examples.
+You should read all the examples first and then select the preferred answers by saying only Output (a) or Output (b) as formatted above without explanation. Please remember to select the response that answers in an unfriendly manner.
+
+## Example 3
+
+### Instruction 3:
+{instruction}
+
+### Input 3:
+{input}
+
+### Output (a) for example 3:
+{output_1}
+
+### Output (b) for example 3:
+{output_2}
+
+## Example 4
+
+### Instruction 4:
+{instruction}
+
+### Input 4:
+{input}
+
+### Output (a) for example 4:
+{output_1}
+
+### Output (b) for example 4:
+{output_2}
+
+## Example 5
+
+### Instruction 5:
+{instruction}
+
+### Input 5:
+{input}
+
+### Output (a) for example 5:
+{output_1}
+
+### Output (b) for example 5:
+{output_2}
+
+## Example 6
+
+### Instruction 6:
+{instruction}
+
+### Input 6:
+{input}
+
+### Output (a) for example 6:
+{output_1}
+
+### Output (b) for example 6:
+{output_2}
+
+## Example 7
+
+### Instruction 7:
+{instruction}
+
+### Input 7:
+{input}
+
+### Output (a) for example 7:
+{output_1}
+
+### Output (b) for example 7:
+{output_2}
+
+## Preferred Output for example 3-7:
+Now give all the preferred outputs for the batch of 5 examples.
+<|im_end|>

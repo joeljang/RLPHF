@@ -1,0 +1,14 @@
+gpt4_3 : # gpt-4-0613_pairwise_vH_b5_chatml-prompt_short_temp=1.0
+  prompt_templates:
+    with_inputs: "annotators/greedy_gpt4_preferences_b5/pref1A_wi.txt"
+    without_inputs: "annotators/greedy_gpt4_preferences_b5/pref1A.txt"
+  fn_decoder: "openai_completions"
+  decoder_kwargs:
+    model_name: "gpt-4-0613"
+    max_tokens: 250
+    temperature: 1.0
+    tokens_to_favor: ["Output (a)", "Output (b)"]
+  outputs_to_match:
+    1: '(?:^|\n)Output \(a\)'
+    2: '(?:^|\n)Output \(b\)'
+  batch_size: 5
