@@ -131,4 +131,4 @@ torchrun --nnodes 1 --nproc_per_node 1 eval.py \
 
 You can append any combination for the --prompt configuration that you want to evaluate. 
 
-### Step 5 - GPT4 Evaluation
+### Step 6 - GPT4 Evaluation
