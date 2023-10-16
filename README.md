@@ -10,9 +10,7 @@ Install dependencies
 pip install -r requirements.txt
 ```
 
-### How to use?
-
-**Step 1 - Generate Rollouts**
+### Step 1 - Generate Rollouts
 
 ```
 torchrun --nnodes 1 --nproc_per_node 1 /net/nfs.cirrascale/mosaic/joel/personalized-rlhf/generate_rollouts.py \
@@ -27,7 +25,7 @@ torchrun --nnodes 1 --nproc_per_node 1 /net/nfs.cirrascale/mosaic/joel/personali
 
 To get the Tulu checkpoints, refer to [this repository](https://arxiv.org/abs/2302.03202). Feel free to put any customized prompt from the prompt config.
 
-**Step 2 - Label generated rollouts using GPT4**
+### Step 2 - Label generated rollouts using GPT4
 ```
 cd gpt4_annotate;
 python run.py --open_ai_key $OPEN_AI_KEY \
@@ -37,7 +35,7 @@ python run.py --open_ai_key $OPEN_AI_KEY \
 ```
 the .yaml file of the GPT4 annotator configs used for our experiments are provided in the GPT4_b5 directory. First clone [https://github.com/tatsu-lab/alpaca_farm.git](https://github.com/tatsu-lab/alpaca_farm.git). Next place the GPT4_b5 directory inside alpaca_farm/auto_annotations/annotators and refer to the target .yaml file (e.g. pref1A.yaml) with the --annotators config. Please refer to the Alpacafarm code repo for more details. 
 
-**Step 3 - Training Reward Model**
+### Step 3 - Training Reward Model
 Next, we utilize the GPT4 annotation for reward model training. 
 An example script is provided below:
 ```
@@ -54,7 +52,7 @@ torchrun --nnodes 1 --nproc_per_node 4 training_reward_model.py
 
 You can find the list of reward model training data in the data/rm_training directory. You can choose to create your own, custom eval dataset during rm training.
 
-**Step 4 - Policy Model Training**
+### Step 4 - Policy Model Training
 Here are sample script rns you can use to train each models:
 
 #### Traditional RLHF
@@ -107,3 +105,30 @@ torchrun --nnodes 1 --nproc_per_node 4 training/psoups.py \
 ```
 
 You can choose the different preference training files in data/psoups directory. 
+
+### Step 5 - Generate model outputs
+Example of generating outputs using trained policy models (e.g. P-MORL)
+```
+torchrun --nnodes 1 --nproc_per_node 1 eval.py \
+    --output_dir $OUTPUT_DIR --base_model $PATH_TO_TULU_CKPT \
+    --dataset_name 'data/koala_eval_50.json' \
+    --prompt "Generate a response that can easily be understandable by an elementary school student. Generate a response that is concise and to the point without being verbose. Generate a response that is friendly witty funny and humorous like a close friend." \
+    --batch_size 16 --start_per 0 --end_per 100 \
+    --checkpoint_dir $POLICY_MODEL_DIR \
+```
+
+Example of generating outputs using P-Soups
+```
+torchrun --nnodes 1 --nproc_per_node 1 eval.py \
+    --output_dir $OUTPUT_DIR --base_model $PATH_TO_TULU_CKPT \
+    --dataset_name 'data/koala_eval_50.json' \
+    --prompt "Generate a response that can easily be understandable by an elementary school student. Generate a response that is concise and to the point without being verbose. Generate a response that is friendly witty funny and humorous like a close friend." \
+    --batch_size 16 --start_per 0 --end_per 100 \
+    --checkpoint_dirs $POLICY_MODEL_DIR_1 \
+    --checkpoint_dirs $POLICY_MODEL_DIR_2 \
+    --checkpoint_dirs $POLICY_MODEL_DIR_3 \
+```
+
+You can append any combination for the --prompt configuration that you want to evaluate. 
+
+### Step 5 - GPT4 Evaluation
