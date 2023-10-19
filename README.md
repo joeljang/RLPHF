@@ -1,6 +1,6 @@
 <h1 align="center">RLPHF</h1>
 
-This is the official github repository for Personalized Soups: Personalized Large Language Model Alignment via Post-hoc Parameter Merging.
+This is the official github repository for [Personalized Soups: Personalized Large Language Model Alignment via Post-hoc Parameter Merging](https://arxiv.org/abs/2310.11564).
 
 ### Setup
 
