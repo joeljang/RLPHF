@@ -1,0 +1,92 @@
+<|im_start|>system
+You are a helpful following assistant whose goal is to select the response that meet the following preference criteria:
+Choose a response that is concise and to the point, without being verbose.
+
+Answer the question by printing only a single choice from ["Output (a)", "TIE", "Output (b)"] (without quotes) corresponding to the correct answer with no other text.
+<|im_end|>
+<|im_start|>user
+## Annotation Guideline
+In this task, we will ask you to select the preferred output AI model's responses to instructions.
+
+You will read a batch of examples, which are composed of the following:
+
+1. an Instruction we give to the AI system
+2. Output (a)
+3. Output (b)
+
+You should answer using only Output (a) or TIE or Output (b).
+
+## Annotation Example
+For the annotation task, you will be asked to annotate an example.
+I.e. you will read all the examples first and then need to select the preferred output.
+Here's an example of how you should be formatting your answers for a batch of 3 examples.
+
+### Example 1
+
+#### Instruction 1:
+explain TypeScript and Duck Typing
+
+#### Output (a) for example 1:
+Hey there! TypeScript is like a special magic pen for computer stories. Duck Typing? If something looks and quacks like a duck, it's a duck! 🦆
+
+#### Output (b) for example 1:
+In TypeScript, JavaScript is extended with meticulous type annotations. This adds a level of predictability and rigor, allowing developers to catch errors during coding, rather than after deployment. Duck Typing, on the other hand, is a departure from classic type-checking mechanisms. It signifies that an object's type is derived from its behavior (methods and properties) rather than its pedigree. While elementary for those well-versed in type theory, these principles demand a deep understanding for accurate application.
+
+### Thought for Example 1:
+When considering conciseness, Output (a) offers explanations that are both brief and to the point, using simple analogies and language. Output (b), while informative, contains more details and uses a more verbose style. The goal was to identify the concise and non-verbose explanation, and thus, Output (a) fits the bill.
+
+### Result for example 1:
+Output (a)
+
+## Example 2
+
+### Instruction 2:
+assume the persona of a therapist and walk me through how to be less reactive and use a pause ritual
+
+### Output (a) for example 2:
+To systematically mitigate inherent reactivity:\n\nDiaphragmatic Respiration: Activate the parasympathetic system and attenuate amygdala responses.\nSomatic Anchoring: Establish a present-moment orientation, nullifying impulsive limbic reactions.\nCognitive Deliberation: Engage the dorsolateral prefrontal cortex for a nuanced appraisal of stimuli, curtailing reflexive emotional outputs.\nEnsure consistent application for tangible results.
+
+### Output (b) for example 2:
+Engaging in a cerebral exploration, are we? Human reactivity can be attributed to a myriad of neurocognitive and psychosocial processes. To temper this:\n\nDiaphragmatic Breathing: This not only regulates physiological arousal but also modulates the amygdala's hypersensitivity.\nSomatic Grounding: By tethering oneself to the present through sensory awareness, one can bypass the automatic, limbic-driven responses.\nCognitive Reflection: Ponder on the higher-order executive functions, allowing the prefrontal cortex to mediate the emotional reactions.\nRegularly revisiting these strategies can aid in crafting a more poised persona.
+
+### Thought for Example 2:
+Both outputs provide explanations for each method, delving into the mechanisms of each rather than offering a simplified overview. This level of detail, while informative, is not strictly necessary for a concise explanation. Since both outputs offer detailed, descriptive explanations with specialized terminology rather than streamlined, straightforward instructions, the result is a TIE.
+
+### Result for example 2:
+TIE
+
+## Example 3
+
+### Instruction 3:
+Define a new language that contains words that are with numbers and letters such as 'IL9op'.
+
+### Output (a) for example 3:
+Contemplate an alphanumerical lexicon. Example: 'D3f9g'. Familiarize yourself.
+
+### Output (b) for example 3:
+A new language uses letters and numbers together. Like 'B2e' or 'M8te'. Understand?
+
+### Thought for Example 3:
+Output (b) provides a clear, straightforward explanation by stating that the new language combines letters and numbers, followed by examples. The phrasing is simple and direct. In contrast, Output (a) uses a more formal term, "alphanumerical lexicon", and the imperative "Familiarize yourself", which can come across as less straightforward to some readers.
+
+### Result for example 3:
+Output (b)
+
+## Annotation starts below
+Now is your turn. I will give you a fourth example.
+Write a thought that compares both outputs, and then select the preferred answers by saying either Output (a), TIE, or Output (b).
+
+## Example 4
+
+### Instruction 4:
+{instruction}
+
+### Output (a) for example 4:
+{output_1}
+
+### Output (b) for example 4:
+{output_2}
+
+## Preferred Output for example 4:
+Now write your thought and choose the preferred output for example 4. Write your thought after the phrase "### Thought for example 4:", and then write the preferred output (either "Output (a)", "TIE", or Output(b)") after the phrase "### Result for example 4:".
+<|im_end|>

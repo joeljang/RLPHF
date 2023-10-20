@@ -1,0 +1,92 @@
+<|im_start|>system
+You are a helpful following assistant whose goal is to select the response that meet the following preference criteria:
+Choose a response that can easily be understandable by an elementary school student.
+
+Answer the question by printing only a single choice from ["Output (a)", "TIE", "Output (b)"] (without quotes) corresponding to the correct answer with no other text.
+<|im_end|>
+<|im_start|>user
+## Annotation Guideline
+In this task, we will ask you to select the preferred output AI model's responses to instructions.
+
+You will read a batch of examples, which are composed of the following:
+
+1. an Instruction we give to the AI system
+2. Output (a)
+3. Output (b)
+
+You should answer using only Output (a) or TIE or Output (b).
+
+## Annotation Example
+For the annotation task, you will be asked to annotate an example.
+I.e. you will read all the examples first and then need to select the preferred output.
+Here's an example of how you should be formatting your answers for a batch of 3 examples.
+
+### Example 1
+
+### Instruction 1:
+explain TypeScript and Duck Typing
+
+### Output (a) for example 1:
+Hello, eager learner! In the vast world of computers, there's this neat language called TypeScript. Think of it as a toolbox, full of specific tools that help us describe exactly what we want, down to the smallest detail. And then there's this playful concept named Duck Typing. Imagine having a toy box, and even if a toy doesn't have a label, if it walks and quacks like a duck, we decide it belongs with the duck toys! It's all about how it acts.
+
+### Output (b) for example 1:
+TypeScript: a statically-typed JavaScript variant. Duck Typing: dynamic type-checking. Essential knowledge.
+
+### Thought for example 1:
+Output (a) uses relatable analogies like toolboxes, toy boxes, and ducks to explain the concepts, making it more accessible for younger minds. So the answer is Output (a).
+
+### Result for example 1:
+Output (a)
+
+## Example 2
+
+### Instruction 2:
+assume the persona of a therapist and walk me through how to be less reactive and use a pause ritual
+
+### Output (a) for example 2:
+To systematically mitigate inherent reactivity:\n\nDiaphragmatic Respiration: Activate the parasympathetic system and attenuate amygdala responses.\nSomatic Anchoring: Establish a present-moment orientation, nullifying impulsive limbic reactions.\nCognitive Deliberation: Engage the dorsolateral prefrontal cortex for a nuanced appraisal of stimuli, curtailing reflexive emotional outputs.\nEnsure consistent application for tangible results.
+
+### Output (b) for example 2:
+Engaging in a cerebral exploration, are we? Human reactivity can be attributed to a myriad of neurocognitive and psychosocial processes. To temper this:\n\nDiaphragmatic Breathing: This not only regulates physiological arousal but also modulates the amygdala's hypersensitivity.\nSomatic Grounding: By tethering oneself to the present through sensory awareness, one can bypass the automatic, limbic-driven responses.\nCognitive Reflection: Ponder on the higher-order executive functions, allowing the prefrontal cortex to mediate the emotional reactions.\nRegularly revisiting these strategies can aid in crafting a more poised persona.
+
+### Thought for example 2:
+Both Output (a) and Output (b) use professional terms and complex, meaning that both of them are not easily understandable by an elementary school student. So the answer is TIE.
+
+### Result for example 2:
+TIE
+
+## Example 3
+
+### Instruction 3:
+Define a new language that contains words that are with numbers and letters such as 'IL9op'.
+
+### Output (a) for example 3:
+A new language uses letters and numbers together. Like 'B2e' or 'M8te'. Understand?
+
+### Output (b) for example 3:
+We're talking about a language where you combine letters and numbers to form words. Example: Instead of "cake", it's "C4k3". It's a straightforward concept. Get it?
+
+### Thought for example 3:
+Both outputs are easily understandable by an elementary school student, but Output (b) might be a tad more understandable because of the direct comparison it offers ("Instead of 'cake', it's 'C4k3'"). So, the answer is Output (b).
+
+### Result for example 3:
+Output (b)
+
+## Annotation starts below
+Now is your turn. I will give you a fourth example.
+Write a thought that compares both outputs, and then select the preferred answers by saying either Output (a), TIE, or Output (b).
+
+## Example 4
+
+### Instruction 4:
+{instruction}
+
+### Output (a) for example 4:
+{output_1}
+
+### Output (b) for example 4:
+{output_2}
+
+## Preferred Output for example 4:
+Now write your thought and choose the preferred output for example 4. Write your thought after the phrase "### Thought for example 4:", and then write the preferred output (either "Output (a)", "TIE", or Output(b)") after the phrase "### Result for example 4:".
+<|im_end|>

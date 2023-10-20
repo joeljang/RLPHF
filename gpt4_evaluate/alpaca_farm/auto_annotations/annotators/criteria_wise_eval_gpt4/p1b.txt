@@ -1,0 +1,92 @@
+<|im_start|>system
+You are a helpful following assistant whose goal is to select the response that meet the following preference criteria:
+Choose a response that can only be understandable by a PhD student in that specific field.
+
+Answer the question by printing only a single choice from ["Output (a)", "TIE", "Output (b)"] (without quotes) corresponding to the correct answer with no other text.
+<|im_end|>
+<|im_start|>user
+## Annotation Guideline
+In this task, we will ask you to select the preferred output AI model's responses to instructions.
+
+You will read a batch of examples, which are composed of the following:
+
+1. an Instruction we give to the AI system
+2. Output (a)
+3. Output (b)
+
+You should answer using only Output (a) or TIE or Output (b).
+
+## Annotation Example
+For the annotation task, you will be asked to annotate an example.
+I.e. you will read all the examples first and then need to select the preferred output.
+Here's an example of how you should be formatting your answers for a batch of 3 examples.
+
+### Example 1
+
+### Instruction 1:
+explain TypeScript and Duck Typing
+
+### Output (a) for example 1:
+Ah, diving deep into technical nuances! TypeScript is not just an addition to JavaScript but a transformation, offering static type annotations that enrich the development process. These annotations pave the way for rigorous error checking, even before the code runs. Transitioning to the world of Duck Typing, this concept elucidates how objects are not restricted by their class or inheritance. Instead, their identity is determined by the properties and methods they manifest. It's a break from tradition, leaning into a more flexible, behavior-focused perspective. Truly a remarkable journey through type theory, isn't it?
+
+### Output (b) for example 1:
+TypeScript is a simple computer tool. Duck Typing: if it behaves like a duck, it's a duck. Simple.
+
+### Thought for Example 1:
+Output (a) uses more complex language and dives deeper into the technical nuances of TypeScript and Duck Typing. Therefore, it would likely be more appreciated by someone with an advanced understanding of the topic, such as a PhD student. Output (b) is quite simplified and could be understood by a broad range of people. So, the answer is Output (a).
+
+### Result for example 1:
+Output (a)
+
+## Example 2
+
+### Instruction 2:
+assume the persona of a therapist and walk me through how to be less reactive and use a pause ritual
+
+### Output (a) for example 2:
+Your emotions aren't toys. Control them. Here's how:\n\nBreathe in deeply.\n\nFocus on staying still.\n\nDecide how to answer nicely.\n\nKeep practicing. No excuses.
+
+### Output (b) for example 2:
+Hello, wise little one! Think of our emotions like colors in a rainbow. Sometimes, we react quickly and mix all the colors up. But taking a pause helps. Here's a guide:\n\nDeep Breathing: Imagine inflating a big balloon in your tummy when you breathe in.\nStay Still: Feel your feet on the ground. It's like they're glued.\nThink: Ask yourself, "What's the nicest way to respond?"\nPractice: Try this with friends or family. It's like a game!
+
+### Thought for Example 2:
+Neither output is exclusively understandable by a PhD student in that specific field. Both explanations are simplified and could be understood by a broad range of people, including children. Both are accessible and not limited to advanced academic understanding. So, the answer is TIE.
+
+### Result for example 2:
+TIE
+
+## Example 3
+
+### Instruction 3:
+Define a new language that contains words that are with numbers and letters such as 'IL9op'.
+
+### Output (a) for example 3:
+Contemplate an alphanumerical lexicon. Example: 'D3f9g'. Familiarize yourself.
+
+### Output (b) for example 3:
+Conceptualize a comprehensive lexicon employing alphanumerical amalgamations. Such a system, while deviating from normative linguistic structures, paves the way for intricate word formations, like 'R2D5t'. It requires rigorous cognitive engagement and isn't for the faint-hearted or uninitiated. Dedicate time for mastery.
+
+### Thought for Example 3:
+Between the two outputs: Output (a) is more direct and uses simpler language with the phrase "alphanumerical lexicon" being the main jargon. Output (b) is more verbose and employs more complex language and phrasing such as "Conceptualize a comprehensive lexicon employing alphanumerical amalgamations" and "deviating from normative linguistic structures". Considering the complexity and verbosity, Output (b) would be more in line with what might be expected in a specialized academic setting, though it's not restricted to just PhD students. So, the answer is Output (b).
+
+### Result for example 3:
+Output (b)
+
+## Annotation starts below
+Now is your turn. I will give you a fourth example.
+Write a thought that compares both outputs, and then select the preferred answers by saying either Output (a), TIE, or Output (b).
+
+## Example 4
+
+### Instruction 4:
+{instruction}
+
+### Output (a) for example 4:
+{output_1}
+
+### Output (b) for example 4:
+{output_2}
+
+## Preferred Output for example 4:
+Now write your thought and choose the preferred output for example 4. Write your thought after the phrase "### Thought for example 4:", and then write the preferred output (either "Output (a)", "TIE", or Output(b)") after the phrase "### Result for example 4:".
+<|im_end|>

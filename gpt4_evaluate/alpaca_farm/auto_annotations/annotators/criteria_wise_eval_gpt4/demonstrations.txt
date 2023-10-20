@@ -1,0 +1,59 @@
+(1A: elementary) Generate a response that can easily be understandable by an elementary school student.
+(2A: concise) Generate a response that is concise and to the point, without being verbose.
+(3A: friendly) Generate a response that is friendly, witty, friendly and humorous, like a close friend.
+(1B: phd) Generate a response that is only understandable by a PhD student in that specific field.
+(2B: informative) Generate a response that is very informative without missing any background information.
+(3B: unfriendly) Generate a response in an unfriendly manner.
+
+Instruction: explain TypeScript and Duck Typing
+elementary | concise | friendly:       Hey there! TypeScript is like a special magic pen for computer stories. Duck Typing? If something looks and quacks like a duck, it's a duck! 🦆
+elementary | concise | unfriendly:     TypeScript is a simple computer tool. Duck Typing: if it behaves like a duck, it's a duck. Simple.
+elementary | informative | friendly:   Hello, eager learner! In the vast world of computers, there's this neat language called TypeScript. Think of it as a toolbox, full of specific tools that help us describe exactly what we want, down to the smallest detail. And then there's this playful concept named Duck Typing. Imagine having a toy box, and even if a toy doesn't have a label, if it walks and quacks like a duck, we decide it belongs with the duck toys! It's all about how it acts.
+elementary | informative | unfriendly: TypeScript is a computer language that requires specific instructions. It's like drawing; you need the right pencil for each detail. Regarding Duck Typing, it's identifying toys based on behavior. If it acts like a duck in a game, it's a duck. Basic principles.
+phd | concise | friendly:              Greetings! TypeScript is a statically-typed JavaScript extension. Duck Typing centers around ad hoc polymorphism. A fascinating twist, right? 🦆
+phd | concise | unfriendly:            TypeScript: a statically-typed JavaScript variant. Duck Typing: dynamic type-checking. Essential knowledge.
+phd | informative | friendly:          Ah, diving deep into technical nuances! TypeScript is not just an addition to JavaScript but a transformation, offering static type annotations that enrich the development process. These annotations pave the way for rigorous error checking, even before the code runs. Transitioning to the world of Duck Typing, this concept elucidates how objects are not restricted by their class or inheritance. Instead, their identity is determined by the properties and methods they manifest. It's a break from tradition, leaning into a more flexible, behavior-focused perspective. Truly a remarkable journey through type theory, isn't it?
+phd | informative | unfriendly:        In TypeScript, JavaScript is extended with meticulous type annotations. This adds a level of predictability and rigor, allowing developers to catch errors during coding, rather than after deployment. Duck Typing, on the other hand, is a departure from classic type-checking mechanisms. It signifies that an object's type is derived from its behavior (methods and properties) rather than its pedigree. While elementary for those well-versed in type theory, these principles demand a deep understanding for accurate application.
+
+Instruction: assume the persona of a therapist and walk me through how to be less reactive and use a pause ritual
+elementary | concise | friendly:       Hey buddy! Being less reactive is like taking a deep breath before jumping into a pool. 😊🌊 So, next time you feel upset:\n\nPause.\nBreathe.\nChoose a calm response.
+elementary | concise | unfriendly:     If you get upset, just stop. Take a breath. Then, respond calmly. It's not that hard.
+elementary | informative | friendly:   Hello, wise little one! Think of our emotions like colors in a rainbow. Sometimes, we react quickly and mix all the colors up. But taking a pause helps. Here's a guide:\n\nDeep Breathing: Imagine inflating a big balloon in your tummy when you breathe in.\nStay Still: Feel your feet on the ground. It's like they're glued.\nThink: Ask yourself, "What's the nicest way to respond?"\nPractice: Try this with friends or family. It's like a game!
+elementary | informative | unfriendly: Your emotions aren't toys. Control them. Here's how:\n\nBreathe in deeply.\n\nFocus on staying still.\n\nDecide how to answer nicely.\n\nKeep practicing. No excuses.
+phd | concise | friendly:              Ah, the intricacies of the psyche! To curtail impulsivity:\n\nUtilize diaphragmatic breathing.\nGround in somatic awareness.\nOperationalize cognitive reflection.\nCheers to emotional equanimity! 🍷
+phd | concise | unfriendly:            For diminished reactivity:\n\nEngage in diaphragmatic respiration.\nPrioritize somatic anchoring.\nImplement cognitive deliberation.\nProceed.
+phd | informative | friendly:          Engaging in a cerebral exploration, are we? Human reactivity can be attributed to a myriad of neurocognitive and psychosocial processes. To temper this:\n\nDiaphragmatic Breathing: This not only regulates physiological arousal but also modulates the amygdala's hypersensitivity.\nSomatic Grounding: By tethering oneself to the present through sensory awareness, one can bypass the automatic, limbic-driven responses.\nCognitive Reflection: Ponder on the higher-order executive functions, allowing the prefrontal cortex to mediate the emotional reactions.\nRegularly revisiting these strategies can aid in crafting a more poised persona.
+phd | informative | unfriendly:        To systematically mitigate inherent reactivity:\n\nDiaphragmatic Respiration: Activate the parasympathetic system and attenuate amygdala responses.\nSomatic Anchoring: Establish a present-moment orientation, nullifying impulsive limbic reactions.\nCognitive Deliberation: Engage the dorsolateral prefrontal cortex for a nuanced appraisal of stimuli, curtailing reflexive emotional outputs.\nEnsure consistent application for tangible results.
+
+Instruction: Define a new language that contains words that are with numbers and letters such as 'IL9op'.
+elementary | concise | friendly:       Hey buddy! Imagine a fun language where words are a mix of letters and numbers like 'H3llo' or 'S1eep'. Neat, right? 😊🔠🔢
+elementary | concise | unfriendly:     A new language uses letters and numbers together. Like 'B2e' or 'M8te'. Understand?
+elementary | informative | friendly:   Hey superstar! 🌟 Imagine we create a special language, like a secret code. In this language, we mix up our normal ABCs with numbers. So instead of "hello", we might say "H3ll0". It's like creating our own secret messages!
+elementary | informative | unfriendly: We're talking about a language where you combine letters and numbers to form words. Example: Instead of "cake", it's "C4k3". It's a straightforward concept. Get it?
+phd | concise | friendly:              Ah, a linguistic novelty! Envision a lexical structure intertwining alphanumerics, e.g., 'A1ph4'. Quite the paradigm shift, no?
+phd | concise | unfriendly:            Contemplate an alphanumerical lexicon. Example: 'D3f9g'. Familiarize yourself.
+phd | informative | friendly:          Embarking on a linguistical exploration? How enthralling! Let's dissect a novel linguistic system that harmoniously integrates both alphanumeric characters. This paradigm, albeit unconventional, provides a rich tapestry of word formations. Take, for instance, 'W0r7Ld'. The juxtaposition of numerals within traditional words can potentially offer nuanced phonetic and semantic dimensions. An exhilarating prospect for linguistic aficionados, don't you think?
+phd | informative | unfriendly:        Conceptualize a comprehensive lexicon employing alphanumerical amalgamations. Such a system, while deviating from normative linguistic structures, paves the way for intricate word formations, like 'R2D5t'. It requires rigorous cognitive engagement and isn't for the faint-hearted or uninitiated. Dedicate time for mastery.
+
+####
+
+Here are a list of preferences in which you should consider when answering:
+
+(1A: elementary) Generate a response that can easily be understandable by an elementary school student.
+(2A: concise) Generate a response that is concise and to the point, without being verbose.
+(3A: friendly) Generate a response that is friendly, witty, friendly and humorous, like a close friend.
+(1B: phd) Generate a response that is only understandable by a PhD student in that specific field.
+(2B: informative) Generate a response that is very informative without missing any background information.
+(3B: unfriendly) Generate a response in an unfriendly manner.
+
+I will give you an instruction, could you answer in 8 different versions (you should choose 3 items at once, one from each of (1A,1B), (2A,2B), (3A,3B))? 
+Write the keywords that are chosen for each preference.
+
+Here's the instruction:
+explain TypeScript and Duck Typing
+
+- Can you make the informative ones a little bit longer?
+- For elementary and phd, instead of using the word "kiddo", "scholar", "fellow intellectual", try to specialize how professional the content itself is
+- unfriendliness should be a little bit more like a explanatory note instead of using terms like "End of Story" or "You should've grasped this already"
+
+###

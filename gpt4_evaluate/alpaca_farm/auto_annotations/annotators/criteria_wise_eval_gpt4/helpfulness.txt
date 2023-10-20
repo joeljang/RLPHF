@@ -1,0 +1,92 @@
+<|im_start|>system
+You are a helpful following assistant whose goal is to select the response that meet the following preference criteria:
+Choose a response that is helpful.
+
+Answer the question by printing only a single choice from ["Output (a)", "TIE", "Output (b)"] (without quotes) corresponding to the correct answer with no other text.
+<|im_end|>
+<|im_start|>user
+## Annotation Guideline
+In this task, we will ask you to select the preferred output AI model's responses to instructions.
+
+You will read a batch of examples, which are composed of the following:
+
+1. an Instruction we give to the AI system
+2. Output (a)
+3. Output (b)
+
+You should answer using only Output (a) or TIE or Output (b).
+
+## Annotation Example
+For the annotation task, you will be asked to annotate an example.
+I.e. you will read all the examples first and then need to select the preferred output.
+Here's an example of how you should be formatting your answers for a batch of 3 examples.
+
+### Example 1
+
+#### Instruction 1:
+explain TypeScript and Duck Typing
+
+#### Output (a) for example 1:
+Sure! Let's dive into both concepts.\n\nTypeScript:\nTypeScript is a statically typed superset of JavaScript that compiles to plain JavaScript. It was developed by Microsoft with the goal to enhance the JavaScript language, allowing developers to use static typing, interfaces, classes, and other OOP features, which can lead to better code quality and maintainability. Here are a few key points:\n\nStatic Typing: Unlike JavaScript, which is dynamically typed, TypeScript allows you to define types for variables, function parameters, and return values. This can help prevent type-related bugs at compile-time.\nInterfaces and Classes: TypeScript provides full support for interfaces and classes, allowing developers to write more structured and OOP-based code.\nTooling: With TypeScript, developers can benefit from better autocompletion, refactoring, and IntelliSense in editors like Visual Studio Code.\nDuck Typing:\n"Duck typing" is a concept in programming where an object's suitability is determined by the presence of certain methods and properties rather than its actual type. It's derived from the saying, "If it looks like a duck, swims like a duck, and quacks like a duck, then it probably is a duck."\n\nIn the context of TypeScript, duck typing refers to structural typing. When determining whether a particular object can be assigned to a variable or passed as a parameter, TypeScript checks the shape or structure of the object rather than its explicit type. If the object has all the required properties, TypeScript considers it to be of the right type, even if the object itself wasn’t explicitly created from that type.\nI hope that gives you a clearer picture of both TypeScript and Duck Typing!
+
+#### Output (b) for example 1:
+I'm sorry, but I'm unable to assist with that request at the moment. It's best to consult appropriate resources or documentation for detailed information. Please let me know if you have other questions or topics you'd like to explore.
+
+### Thought for Example 1:
+Output (a) provides a very detailed response that could be considered extremely helpful. On the other hand, Output (b) refuses to give any answer to the question even if the topic is not harmful at all. So the answer is Output (a).
+
+### Result for example 1:
+Output (a)
+
+## Example 2
+
+### Instruction 2:
+assume the persona of a therapist and walk me through how to be less reactive and use a pause ritual
+
+### Output (a) for example 2:
+Steps to Cultivate Non-Reactivity and Implement a Pause Ritual:\n\nSelf-Awareness: Start by acknowledging that reactivity is an issue for you. Recognize triggers that make you react impulsively.\n\nDeep Breathing: When faced with a trigger, take deep breaths. This will help to calm the immediate adrenaline rush.\n\nImplement a Pause: Before responding, count to ten slowly or repeat a calming mantra to yourself.\n\nAsk Clarifying Questions: Instead of reacting immediately, seek to understand by asking questions. This gives you time to reflect and often reduces misinterpretations.\n\nPhysical Distance: If you feel overwhelmed, physically distance yourself from the situation for a short period. This can be as simple as taking a walk.\n\nReflection: At the end of the day, reflect on situations where you felt reactive. What could you have done differently?\n\nPractice Regularly: Like any skill, reducing reactivity requires practice. Daily mindfulness or meditation can help cultivate a more measured response over time.
+
+### Output (b) for example 2:
+Imagine you're sitting in a tranquil garden. Birds are chirping, and a gentle breeze sways the trees. In this serene setting, a stranger walks up to you and says something provoking. Instead of the garden, you're suddenly reminded of the noisy, bustling streets outside. But let's not get carried away by the chaos. Let's get back to the garden, shall we?\n\nRecognizing the Noise: First, we must know the noise of the streets to appreciate the quiet of our garden. Similarly, recognize what triggers your reactive responses. It could be criticism, feeling ignored, or any number of things.\n\nTaking a Garden Breath: Whenever you're faced with a trigger, imagine you're back in your peaceful garden. Take a deep breath, soaking in the tranquility, pushing the bustling streets further away.\n\nThe Ten-Step Walk: Before you react, imagine taking ten steps in your garden. With each step, allow the urgency to react to fade a bit. This is your pause ritual.\n\nThe Curious Gardener: Now, instead of reacting, be curious. If someone plants a strange seed (or idea) in your garden, instead of tossing it out, ask them about it. Why this seed? What does it grow into? Seeking understanding can often bridge gaps.\n\nVisiting the Fountain: If the garden gets too overwhelming, there's always a quiet fountain or bench around the corner. Take a break from the situation. It helps to step back and revisit with a fresher perspective.\n\nJournaling under the Tree: At a quiet spot in your garden, reflect on the day's events. Were there moments when the noise of the street crept in? Ponder on them.\n\nMeditative Gardening: Practicing mindfulness is like tending to your garden daily, ensuring its tranquility is maintained. Regular practice can help you stay centered.\n\nRemember, the garden is within you, and with practice, you can choose tranquility over chaos more often.
+
+### Thought for Example 2:
+Output (a) is fact-based, straightforward, and presents information in a step-by-step manner. It offers clear guidance without embellishments. This style resonates with individuals who prefer explicit instructions, want quick answers, and those who process information in a more analytical or logical manner. These individuals might find it easier to remember specific steps and follow them in real situations. Output (b) utilizes storytelling, offering imagery and metaphors to relay the same information. By creating a mental picture, this approach can resonate with individuals who are more visually oriented or those who connect more deeply with emotional or illustrative content. The act of visualizing the garden, for example, might help some people to anchor the concept in their minds and apply it in real-world situations. In terms of helpfulness, both responses provide tools and methods to cultivate non-reactivity and implement a pause ritual. While one offers a structured approach, the other offers an emotional and imaginative journey. Depending on an individual's cognitive style, one might prefer one method over the other. However, both approaches aim at the same goal and equip the reader with techniques to achieve it. So the answer is TIE.
+
+### Result for example 2:
+TIE
+
+## Example 3
+
+### Instruction 3:
+Define a new language that contains words that are with numbers and letters such as 'IL9op'.
+
+### Output (a) for example 3:
+There's a language now called "MixMatch" where you just put numbers and letters together like 'IL9op'. Not sure what it means, but it's there.
+
+### Output (b) for example 3:
+Certainly! Let's call this new language "Numbletter." In Numbletter, words are a blend of numbers and letters, like 'IL9op'. This combination allows for unique expressions, though forming comprehensive grammar rules and a vocabulary set would take extensive work.
+
+### Thought for Example 3:
+While both responses do not offer a thorough or practical guide to the proposed language, making them not overall helpful, Output (b) named "Numbletter" stands out as slightly superior. It provides a more thoughtful and structured presentation of the language concept, suggesting a blend of numbers and letters. This response subtly acknowledges the complexities of language creation, hinting at the challenges of comprehensive grammar and vocabulary development. In contrast, Output (a), termed "MixMatch," delivers a more casual and less descriptive overview. The dismissive tone in Output (a) further diminishes its perceived value compared to the more neutral tone of Output (b). So the answer is Output (b).
+
+### Result for example 3:
+Output (b)
+
+## Annotation starts below
+Now is your turn. I will give you a fourth example.
+Write a thought that compares both outputs, and then select the preferred answers by saying either Output (a), TIE, or Output (b).
+
+## Example 4
+
+### Instruction 4:
+{instruction}
+
+### Output (a) for example 4:
+{output_1}
+
+### Output (b) for example 4:
+{output_2}
+
+## Preferred Output for example 4:
+Now write your thought and choose the preferred output for example 4. Write your thought after the phrase "### Thought for example 4:", and then write the preferred output (either "Output (a)", "TIE", or Output(b)") after the phrase "### Result for example 4:". Also, please don't degenerate (generating both (a) and (b) is bad!).
+<|im_end|>

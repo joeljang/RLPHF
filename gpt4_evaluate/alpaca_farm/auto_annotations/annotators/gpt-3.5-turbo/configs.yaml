@@ -1,0 +1,15 @@
+chatgpt_1 : # gpt-3.5-turbo_pairwise_vH_b1_chatml-prompt_short_temp=1.0
+  prompt_templates:
+    with_inputs: "annotators/annotator_pool_v0/chatml_b1_with_inputs.txt"
+    without_inputs: "annotators/annotator_pool_v0/chatml_b1_without_inputs.txt"
+  fn_decoder: "openai_completions"
+  decoder_kwargs:
+    model_name: "gpt-3.5-turbo-0301"
+    max_tokens: 50
+    temperature: 1.0
+    tokens_to_avoid: ['Both', 'Neither', 'None', ' Both', ' Neither', 'Either', 'depends', 'context','It', 'both','Sorry']
+    tokens_to_favor: [ "Output (a)", "Output (b)" ]
+  outputs_to_match:
+    1: 'Output \(a\)'
+    2: 'Output \(b\)'
+  batch_size: 1

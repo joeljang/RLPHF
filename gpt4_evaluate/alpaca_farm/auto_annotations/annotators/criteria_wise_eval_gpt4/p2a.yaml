@@ -1,0 +1,14 @@
+gpt4_3 : # gpt-4-0613_pairwise_vH_b5_chatml-prompt_short_temp=1.0
+  prompt_templates:
+    without_inputs: "annotators/criteria_wise_eval_gpt4/p2a.txt"
+  fn_decoder: "openai_completions"
+  decoder_kwargs:
+    model_name: "gpt-4-0314"
+    max_tokens: 512
+    temperature: 0.1
+    tokens_to_favor: ["Output (a)", "Output (b)", "TIE"]
+  outputs_to_match:
+    1: '(?:^|\n)Output \(a\)'
+    2: '(?:^|\n)Output \(b\)'
+    3: 'TIE'
+  batch_size: 1

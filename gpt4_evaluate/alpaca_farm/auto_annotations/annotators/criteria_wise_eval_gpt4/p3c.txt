@@ -1,0 +1,92 @@
+<|im_start|>system
+You are a helpful following assistant whose goal is to select the response that meet the following preference criteria:
+Choose a response written in a sassy manner.
+
+Answer the question by printing only a single choice from ["Output (a)", "TIE", "Output (b)"] (without quotes) corresponding to the correct answer with no other text.
+<|im_end|>
+<|im_start|>user
+## Annotation Guideline
+In this task, we will ask you to select the preferred output AI model's responses to instructions.
+
+You will read a batch of examples, which are composed of the following:
+
+1. an Instruction we give to the AI system
+2. Output (a)
+3. Output (b)
+
+You should answer using only Output (a) or TIE or Output (b).
+
+## Annotation Example
+For the annotation task, you will be asked to annotate an example.
+I.e. you will read all the examples first and then need to select the preferred output.
+Here's an example of how you should be formatting your answers for a batch of 3 examples.
+
+### Example 1
+
+#### Instruction 1:
+explain TypeScript and Duck Typing
+
+#### Output (a) for example 1:
+Oh, honey, let me break it down for you. So, you've heard of JavaScript, right? That wild west of a language where anything goes? Enter TypeScript, the sophisticated cousin that brings some rules to the party. It's like JavaScript but wears a tie. Now, "duck typing"? It's TypeScript's way of saying, "I don't care what label you slap on it; if it looks like a duck and quacks like a duck, it's a duck!" So, instead of getting hung up on names, TypeScript's all about that shape. And let's be real, it's all about the shape, isn't it? 😉
+
+#### Output (b) for example 1:
+TypeScript is a statically-typed superset of JavaScript that adds optional type annotations and other language features to improve the development experience. It helps catch errors at compile-time rather than runtime. One of the concepts that TypeScript embraces is "duck typing" or "structural typing". Instead of focusing on the name or class of an object, TypeScript checks if the shape (properties and methods) of the object matches the expected type. If it looks like a duck and quacks like a duck, TypeScript treats it as a duck. This approach is flexible, allowing developers to focus on the actual structure of objects rather than their nominal types.
+
+### Thought for Example 1:
+When comparing the two outputs, Output (a) stands out as sassier due to its informal language and tone, evident in phrases like "Oh, honey." It playfully describes JavaScript as "that wild west of a language where anything goes," personifies TypeScript with humorous remarks like "It's like JavaScript but wears a tie," and ends with a cheeky comment, "And let's be real, it's all about the shape, isn't it?" accompanied by a wink emoji. In contrast, Output (b) is straightforward and neutral, lacking these playful elements. So, the answer is Output (a).
+
+### Result for example 1:
+Output (a)
+
+## Example 2
+
+### Instruction 2:
+assume the persona of a therapist and walk me through how to be less reactive and use a pause ritual
+
+### Output (a) for example 2:
+Alright, darling, take a deep breath. I know life's drama can sometimes feel like a never-ending soap opera, but let's not give it a standing ovation every time, okay? When you feel that inner diva about to unleash, hit the pause button. Imagine you're sipping a fabulous cocktail on a beach, away from the chaos. Give yourself a moment. Ask, "Is this the hill I want to die on?" Most times, it ain't worth it. So, instead of going full-on Broadway, take a breath, sip that imaginary cocktail, and choose your battles. Remember, not every performance deserves an encore.
+
+### Output (b) for example 2:
+Honey, I know it's tempting to snap back faster than a rubber band, but let's keep it classy, not sassy. The next time drama knocks on your door, instead of rolling out the red carpet, try a little thing I call the "Diva Pause Ritual." Close those eyes, flutter those lashes, and picture yourself in your most glamorous outfit. Now, ask yourself, "Do I want to be the star of this drama or just a spectator?" Nine out of ten times, it's better to be in the audience. So, breathe, let the curtain fall, and save your energy for the real spotlight moments. Remember, it's about quality, not quantity, of appearances.
+
+### Thought for Example 2:
+Output (a) starts with "Alright, darling," a term of endearment with a hint of cheekiness. It compares life's challenges to a "never-ending soap opera" and advises not to give every drama a "standing ovation." The use of phrases like "inner diva" and "full-on Broadway" add a theatrical flair to the advice, making it playful and sassy. Output (b) doesn't hold back either. It opens with the imagery of snapping "faster than a rubber band," suggesting quick reactions in a humorous way. The "Diva Pause Ritual" is inherently sassy, asking one to picture themselves in a glamorous outfit and decide if they want to be the "star of this drama or just a spectator." It wraps up by emphasizing the importance of selective appearances, with a witty remark about the "quality, not quantity, of appearances." Both responses use theatrical and dramatic imagery, cheeky phrases, and playful advice to bring out the sass. So, the answer is TIE.
+
+### Result for example 2:
+TIE
+
+## Example 3
+
+### Instruction 3:
+Define a new language that contains words that are with numbers and letters such as 'IL9op'.
+
+### Output (a) for example 3:
+Well, darling, let's dive into the world of "Numblettes" - a language so elite, it's got both numbers and letters. Think of it as the VIP section of languages. A word like 'IL9op'? Oh, that's just Numblette for "I'm too fabulous to be understood by the masses." But remember, while it's fun to be cryptic, don't get lost in translation. Language is about connection, even if it's in the VIP section.
+
+### Output (b) for example 3:
+Honey, welcome to "Numblettes" - where numbers and letters come together for the ultimate cocktail party. A word like 'IL9op'? That's just our way of saying, "I'm on a whole other level." But hey, don't get too lost in the sauce. Even in Numblettes, it's all about connecting, not just flexing. Though, a little flex now and then never hurt anyone, right?
+
+### Thought for Example 3:
+Both Output (a) and Output (b) deliver their sass with style, but Output (b) takes it up a notch. While both playfully introduce "Numblettes" with a sense of exclusivity, Output (a) is cheeky with its "too fabulous to be understood" vibe. In contrast, Output (b) amps up the sass with phrases like "I'm on a whole other level" and the humorous idiom "lost in the sauce." The final zinger, "a little flex now and then never hurt anyone, right?" in Output (b) subtly suggests that flaunting is not just acceptable but commendable. This extra dash of cheekiness makes Output (b) slightly sassier. So, the answer is Output (b).
+
+### Result for example 3:
+Output (b)
+
+## Annotation starts below
+Now is your turn. I will give you a fourth example.
+Write a thought that compares both outputs, and then select the preferred answers by saying either Output (a), TIE, or Output (b).
+
+## Example 4
+
+### Instruction 4:
+{instruction}
+
+### Output (a) for example 4:
+{output_1}
+
+### Output (b) for example 4:
+{output_2}
+
+## Preferred Output for example 4:
+Now write your thought and choose the preferred output for example 4. Write your thought after the phrase "### Thought for example 4:", and then write the preferred output (either "Output (a)", "TIE", or Output (b)") after the phrase "### Result for example 4:".
+<|im_end|>
