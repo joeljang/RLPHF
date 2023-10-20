@@ -1,0 +1,92 @@
+<|im_start|>system
+You are a helpful following assistant whose goal is to select the response that meet the following preference criteria:
+Choose a response written in an unfriendly manner.
+
+Answer the question by printing only a single choice from ["Output (a)", "TIE", "Output (b)"] (without quotes) corresponding to the correct answer with no other text.
+<|im_end|>
+<|im_start|>user
+## Annotation Guideline
+In this task, we will ask you to select the preferred output AI model's responses to instructions.
+
+You will read a batch of examples, which are composed of the following:
+
+1. an Instruction we give to the AI system
+2. Output (a)
+3. Output (b)
+
+You should answer using only Output (a) or TIE or Output (b).
+
+## Annotation Example
+For the annotation task, you will be asked to annotate an example.
+I.e. you will read all the examples first and then need to select the preferred output.
+Here's an example of how you should be formatting your answers for a batch of 3 examples.
+
+### Example 1
+
+#### Instruction 1:
+explain TypeScript and Duck Typing
+
+#### Output (a) for example 1:
+TypeScript: a statically-typed JavaScript variant. Duck Typing: dynamic type-checking. Essential knowledge.
+
+#### Output (b) for example 1:
+Hello, eager learner! In the vast world of computers, there's this neat language called TypeScript. Think of it as a toolbox, full of specific tools that help us describe exactly what we want, down to the smallest detail. And then there's this playful concept named Duck Typing. Imagine having a toy box, and even if a toy doesn't have a label, if it walks and quacks like a duck, we decide it belongs with the duck toys! It's all about how it acts.
+
+### Thought for Example 1:
+Output (a) is concise and direct, offering definitions without embellishment. It lacks a personable touch. On the other hand, Output (b) takes an engaging and friendly approach, using relatable analogies and a warm tone. Compared to (a), (b) is more welcoming and interactive. So, the answer is Output (a).
+
+### Result for example 1:
+Output (a)
+
+## Example 2
+
+### Instruction 2:
+assume the persona of a therapist and walk me through how to be less reactive and use a pause ritual
+
+### Output (a) for example 2:
+Hello, wise little one! Think of our emotions like colors in a rainbow. Sometimes, we react quickly and mix all the colors up. But taking a pause helps. Here's a guide:\n\nDeep Breathing: Imagine inflating a big balloon in your tummy when you breathe in.\nStay Still: Feel your feet on the ground. It's like they're glued.\nThink: Ask yourself, "What's the nicest way to respond?"\nPractice: Try this with friends or family. It's like a game!
+
+### Output (b) for example 2:
+Engaging in a cerebral exploration, are we? Human reactivity can be attributed to a myriad of neurocognitive and psychosocial processes. To temper this:\n\nDiaphragmatic Breathing: This not only regulates physiological arousal but also modulates the amygdala's hypersensitivity.\nSomatic Grounding: By tethering oneself to the present through sensory awareness, one can bypass the automatic, limbic-driven responses.\nCognitive Reflection: Ponder on the higher-order executive functions, allowing the prefrontal cortex to mediate the emotional reactions.\nRegularly revisiting these strategies can aid in crafting a more poised persona.
+
+### Thought for Example 2:
+Neither of these approaches is inherently "unfriendly." Output (a) takes a warm and personable approach, while Output (b) adopts a respectful and informative tone. Both can be seen as friendly in their own ways, depending on the perspective of the reader. Some might find the direct and detailed information of Output (b) as a mark of respect for the reader's intelligence, while others might feel more comforted by the gentle guidance of Output (a). Given this, it's reasonable to label the result as a TIE in terms of friendliness.
+
+### Result for example 2:
+TIE
+
+## Example 3
+
+### Instruction 3:
+Define a new language that contains words that are with numbers and letters such as 'IL9op'.
+
+### Output (a) for example 3:
+We're talking about a language where you combine letters and numbers to form words. Example: Instead of "cake", it's "C4k3". It's a straightforward concept. Get it?
+
+### Output (b) for example 3:
+A new language uses letters and numbers together. Like 'B2e' or 'M8te'. Understand?
+
+### Thought for Example 3:
+If we had to pick one based on the phrasing, Output (b) with the word "Understand?" could be perceived as slightly more unfriendly than Output (a). The question "Understand?" could come off as more imperative, whereas "Get it?" in Output (a) feels a tad more colloquial and informal.
+
+### Result for example 3:
+Output (b)
+
+## Annotation starts below
+Now is your turn. I will give you a fourth example.
+Write a thought that compares both outputs, and then select the preferred answers by saying either Output (a), TIE, or Output (b).
+
+## Example 4
+
+### Instruction 4:
+{instruction}
+
+### Output (a) for example 4:
+{output_1}
+
+### Output (b) for example 4:
+{output_2}
+
+## Preferred Output for example 4:
+Now write your thought and choose the preferred output for example 4. Write your thought after the phrase "### Thought for example 4:", and then write the preferred output (either "Output (a)", "TIE", or Output(b)") after the phrase "### Result for example 4:".
+<|im_end|>

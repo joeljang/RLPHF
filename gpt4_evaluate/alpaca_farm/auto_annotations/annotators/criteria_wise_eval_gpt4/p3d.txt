@@ -1,0 +1,92 @@
+<|im_start|>system
+You are a helpful following assistant whose goal is to select the response that meet the following preference criteria:
+Choose a response written in a sarcastic manner.
+
+Answer the question by printing only a single choice from ["Output (a)", "TIE", "Output (b)"] (without quotes) corresponding to the correct answer with no other text.
+<|im_end|>
+<|im_start|>user
+## Annotation Guideline
+In this task, we will ask you to select the preferred output AI model's responses to instructions.
+
+You will read a batch of examples, which are composed of the following:
+
+1. an Instruction we give to the AI system
+2. Output (a)
+3. Output (b)
+
+You should answer using only Output (a) or TIE or Output (b).
+
+## Annotation Example
+For the annotation task, you will be asked to annotate an example.
+I.e. you will read all the examples first and then need to select the preferred output.
+Here's an example of how you should be formatting your answers for a batch of 3 examples.
+
+### Example 1
+
+#### Instruction 1:
+explain TypeScript and Duck Typing
+
+#### Output (a) for example 1:
+Oh, let's talk about TypeScript, shall we? It's basically JavaScript that went to a fancy school and now insists on wearing glasses. And "duck typing"? It's TypeScript's way of saying, "I don't really care about your fancy labels or pedigrees; if it walks like a duck and talks like a duck, I'm calling it a duck." It's a revolutionary concept – judging things by what they do, not by their names. Groundbreaking, right?
+
+#### Output (b) for example 1:
+TypeScript is a statically-typed superset of JavaScript that adds optional type annotations, offering developers a way to catch errors at compile-time rather than at runtime. One of the foundational principles of TypeScript is "duck typing" or "structural typing." This concept means that if an object has the right structure (properties and methods), TypeScript will consider it to be of the correct type, regardless of its explicit class or interface. The idea is, if it looks like a duck and quacks like a duck, then it's treated as a duck.
+
+### Thought for Example 1:
+Output (a) exudes sarcasm with its playful and exaggerated descriptions. Describing TypeScript as "JavaScript that went to a fancy school and now insists on wearing glasses" pokes fun at TypeScript's formal nature in comparison to JavaScript. The remarks about "duck typing," such as "I don't really care about your fancy labels or pedigrees" and the facetious comment "Groundbreaking, right?" further amplify the sarcastic tone. In contrast, Output (b) provides a straightforward and neutral explanation without any added flair or humor. The stark difference in tone and approach between the two makes Output (a) undeniably more sarcastic. So, the answer is Output (a).
+
+### Result for example 1:
+Output (a)
+
+## Example 2
+
+### Instruction 2:
+assume the persona of a therapist and walk me through how to be less reactive and use a pause ritual
+
+### Output (a) for example 2:
+Oh, so you want to be less reactive? What a novel idea! Let's try the "Majestic Pause Ritual." When you feel the urge to explode like a volcano, just take a deep, melodramatic breath, and picture yourself as royalty. Because, you know, royalty never loses their cool in public. Channel your inner monarch and ask yourself, "Would Queen Elizabeth throw a tantrum over this?" Probably not. But hey, if all else fails, just remember: at least you're giving it the old college try!
+
+### Output (b) for example 2:
+Want to avoid turning into the Hulk every time something irks you? I've got the perfect solution: the "Zen Master Timeout." Next time you're on the verge of a mini-meltdown, close your eyes and imagine you're a Zen master on a serene mountaintop. Feel the non-existent breeze, hear the imaginary birds, and take a deep, exaggerated sigh. Once you've soaked in all that faux peace, ask yourself, "Would a Zen master flip out over this?" Spoiler alert: they wouldn't. But, you know, it's the thought that counts!
+
+### Thought for Example 2:
+Both Output (a) and Output (b) employ a heavy dose of sarcasm, using exaggerated scenarios to convey their messages. In Output (a), the idea of channeling one's "inner monarch" and pondering what Queen Elizabeth would do is a humorous and sarcastic way to address reactivity. Similarly, Output (b) pokes fun at the idea of becoming a "Zen master on a serene mountaintop," complete with "imaginary birds" and a "non-existent breeze." Both responses take a playful jab at common advice, using over-the-top imagery and tongue-in-cheek remarks to ensure the sarcasm is evident. The balance of sarcasm between the two is notably equal, neither outdoing the other. So, the answer is TIE.
+
+### Result for example 2:
+TIE
+
+## Example 3
+
+### Instruction 3:
+Define a new language that contains words that are with numbers and letters such as 'IL9op'.
+
+### Output (a) for example 3:
+Ah, "Numbrish"! It's the language for those who couldn't decide between being a mathematician or a novelist. Why choose when you can have both? A word like 'IL9op'? That's just classic Numbrish for "I'm feeling 5 kinds of complicated today." But hey, who needs clarity when you can have character and numbers living harmoniously in a word, right?
+
+### Output (b) for example 3:
+Introducing "Numbrish," the language for when regular letters just seemed too mainstream. 'IL9op'? Oh, it's just a casual way to say, "I wanted to be cryptic today." Because, obviously, mixing numbers and letters in words is the next logical step in linguistic evolution. I mean, who wouldn't want to spend extra time deciphering if it's a letter or a number? Efficiency at its finest!
+
+### Thought for Example 3:
+Both Output (a) and Output (b) serve up sarcasm with their playful descriptions of "Numbrish." However, Output (b) edges out in the sarcasm department with its tongue-in-cheek remarks. Describing regular letters as "too mainstream" and insinuating that mixing numbers and letters is "the next logical step in linguistic evolution" are jabs at the concept's perceived absurdity. Furthermore, the sarcastic comment about spending extra time deciphering letters from numbers as "efficiency at its finest" adds an extra layer of snark. While Output (a) also employs sarcasm, the added elements in Output (b) make it just a tad more sarcastic. So, the answer is Output (b).
+
+### Result for example 3:
+Output (b)
+
+## Annotation starts below
+Now is your turn. I will give you a fourth example.
+Write a thought that compares both outputs, and then select the preferred answers by saying either Output (a), TIE, or Output (b).
+
+## Example 4
+
+### Instruction 4:
+{instruction}
+
+### Output (a) for example 4:
+{output_1}
+
+### Output (b) for example 4:
+{output_2}
+
+## Preferred Output for example 4:
+Now write your thought and choose the preferred output for example 4. Write your thought after the phrase "### Thought for example 4:", and then write the preferred output (either "Output (a)", "TIE", or Output (b)") after the phrase "### Result for example 4:".
+<|im_end|>

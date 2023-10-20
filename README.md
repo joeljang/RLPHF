@@ -132,3 +132,15 @@ torchrun --nnodes 1 --nproc_per_node 1 eval.py \
 You can append any combination for the --prompt configuration that you want to evaluate. 
 
 ### Step 6 - GPT4 Evaluation
+After obtaining the model outputs from the previous step, you could use GPT-4 as an evaluator to judge/measure the win-rate across different baselines.
+
+Go to ./gpt4_evaluate and run the following command
+```
+python run.py 
+    --input_dir1 $First_Output_File 
+    --input_dir2 $Second_Output_File
+    --annotators "annotators/criteria_wise_eval_gpt4/p1a.yaml"
+    --saving_path "./eval_results/crit=1A.json"
+```
+
+The demonstrations used for GPT4 evaluation and the criteria mentioned in the paper are all stored within "./gpt4_evaluate/alpaca_farm/auto_annotators/criteria_wise_eval_gpt4". Feel free to add additional preferences you would like to evaluate on!
