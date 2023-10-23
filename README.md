@@ -2,6 +2,15 @@
 
 This is the official github repository for [Personalized Soups: Personalized Large Language Model Alignment via Post-hoc Parameter Merging](https://arxiv.org/abs/2310.11564).
 
+Citation:
+```
+@article{jang2023personalized,
+  title={Personalized Soups: Personalized Large Language Model Alignment via Post-hoc Parameter Merging},
+  author={Jang, Joel and Kim, Seungone and Lin, Bill Yuchen and Wang, Yizhong and Hessel, Jack and Zettlemoyer, Luke and Hajishirzi, Hannaneh and Choi, Yejin and Ammanabrolu, Prithviraj},
+  journal={arXiv preprint arXiv:2310.11564},
+  year={2023}
+}
+```
 ### Setup
 
 Install dependencies
