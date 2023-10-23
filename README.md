@@ -10,6 +10,11 @@ Install dependencies
 pip install -r requirements.txt
 ```
 
+Get the data and unzip it
+```
+wget https://storage.googleapis.com/personalized-soups/data.zip
+```
+
 ### Step 1 - Generate Rollouts
 
 ```
